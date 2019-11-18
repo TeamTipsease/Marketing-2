@@ -1,0 +1,183 @@
+.hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 1px green solid;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container {
+  margin: 0 auto;
+  background-color: lightgray;
+}
+img {
+  display: block;
+  width: 100vh;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+}
+header nav {
+  padding: 2.5%;
+  display: static;
+}
+header nav a {
+  padding: 1%;
+  margin: 2%;
+  border: 2px solid white;
+  border-radius: 30%;
+  background-color: green;
+  color: white;
+}
+header nav a:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 1px green solid;
+}
+header div .btn {
+  width: 45px;
+  background-color: green;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  border-radius: 30%;
+}
+header div .btn:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 1px green solid;
+}
+header h2 {
+  font-size: 1.5rem;
+  padding: 2%;
+  color: green;
+  margin: 2%;
+}
