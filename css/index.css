@@ -1,8 +1,3 @@
-.hover {
-  color: #4FA93E;
-  background-color: #F3EFF5;
-  border: 2px green solid;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,6 +128,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
 .container {
   margin: 0 auto;
   background-color: lightgray;
@@ -149,7 +149,7 @@ footer {
   background-color: lightgray;
 }
 footer p {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   text-align: center;
   padding: 30px;
   border-top: 1px solid gray;
@@ -179,7 +179,7 @@ header nav a {
 header nav a:hover {
   color: #4FA93E;
   background-color: #F3EFF5;
-  border: 2px green solid;
+  border: 2px solid #4FA93E;
 }
 header div .btn {
   width: 45px;
@@ -193,7 +193,7 @@ header div .btn {
 header div .btn:hover {
   color: #4FA93E;
   background-color: #F3EFF5;
-  border: 2px green solid;
+  border: 2px solid #4FA93E;
 }
 header h1 {
   font-size: 1rem;
@@ -225,4 +225,65 @@ header h1 {
 }
 .info div p {
   font-size: 0.75rem;
+}
+.team .firstfour {
+  display: flex;
+  padding: 5%;
+}
+.team .firstfour div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.team .firstfour .individual h2 {
+  padding: 3%;
+  font-size: 0.9rem;
+}
+.team .firstfour .individual p {
+  padding: 3%;
+  margin-bottom: 5%;
+}
+.team .firstfour .individual a {
+  padding: 2%;
+  border: 2px solid #F3EFF5;
+  border-radius: 15px;
+  background-color: #4FA93E;
+  color: #F3EFF5;
+}
+.team .firstfour .individual a:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+.team .lastthree {
+  display: flex;
+  padding: 5%;
+}
+.team .lastthree div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.team .lastthree .individual h2 {
+  padding: 3%;
+  font-size: 0.9rem;
+}
+.team .lastthree .individual p {
+  padding: 3%;
+  margin-bottom: 5%;
+}
+.team .lastthree .individual a {
+  padding: 2%;
+  border: 2px solid #F3EFF5;
+  border-radius: 15px;
+  background-color: #4FA93E;
+  color: #F3EFF5;
+}
+.team .lastthree .individual a:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+.teampic {
+  width: 200px;
 }
