@@ -95,6 +95,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
+  font-family: Verdana, 'Geneva', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -135,11 +136,13 @@ table {
 .container {
   margin: 0 auto;
   background-color: lightgray;
+  max-width: 1000px;
 }
 img {
   display: block;
   width: 100vh;
   margin: 0 auto;
+  margin-top: 1%;
   border-radius: 15px;
 }
 footer {
@@ -155,16 +158,23 @@ header {
   text-align: center;
 }
 header nav {
-  padding: 2.5%;
-  display: static;
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+header nav .logo {
+  max-width: 125px;
+  border-radius: 15px;
 }
 header nav a {
-  padding: 1%;
-  margin: 2%;
-  border: 2px solid white;
+  padding: 2%;
+  border: 2px solid #F3EFF5;
   border-radius: 15px;
-  background-color: green;
-  color: white;
+  background-color: #4FA93E;
+  color: #F3EFF5;
 }
 header nav a:hover {
   color: #4FA93E;
@@ -173,9 +183,9 @@ header nav a:hover {
 }
 header div .btn {
   width: 45px;
-  background-color: green;
-  border: 2px solid white;
-  color: white;
+  background-color: #4FA93E;
+  border: 2px solid #F3EFF5;
+  color: #F3EFF5;
   text-align: center;
   padding: 1.5%;
   border-radius: 15px;
@@ -186,11 +196,33 @@ header div .btn:hover {
   border: 2px green solid;
 }
 header h1 {
-  font-size: 1.5rem;
-  padding: 15px;
-  color: #04724D;
-  margin: 3% auto;
-  background-color: #D5EAD1;
-  width: 75%;
+  font-size: 1rem;
+  padding: 1.5%;
+  color: #343434;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #4FA93E;
+  border: 2px solid #F3EFF5;
+  width: 50%;
   border-radius: 15px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info div {
+  width: 20%;
+  text-align: center;
+  margin: 2% auto;
+  border: 2px solid #F3EFF5;
+  padding: 5%;
+  border-radius: 15px;
+  background-color: #4FA93E;
+  color: #343434;
+}
+.info div h2 {
+  font-size: 1rem;
+}
+.info div p {
+  font-size: 0.75rem;
 }
