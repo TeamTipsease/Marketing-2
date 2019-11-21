@@ -2,6 +2,9 @@
     margin          : 0 auto;
     background-color: lightgray;
     max-width:1000px;
+    @media @mobile {
+        max-width:500px;
+    }
 }
 
 img {
@@ -10,14 +13,23 @@ img {
     margin       : 0 auto;
     margin-top:1%;
     border-radius: 15px;
+    @media @mobile {
+        width:100%;
+    }
 }
 
 footer {
-    background-color:lightgray;    
+    background-color: lightgray;
+    border-top: 1px solid gray;
+    text-align:center;
     p {
-        font-size: .5rem;
-        text-align:center;
-        padding:30px;
-        border-top:1px solid gray;
+        font-size : .5rem;
+        text-align: center;
+        padding-bottom   : 30px;
+    }
+    .github {
+        max-width: 25px;
+        padding:2%;
+        display:inline-block;
     }
 }

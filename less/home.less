@@ -44,11 +44,11 @@ header {
     h1 {
         font-size       : 1rem;
         padding         : 1.5%;
-        color           : @jetblack;
+        color           : @maygreen;
         margin          : 0 auto;
         margin-top      : 40px;
-        background-color: @lightgreen;
-        border:2px solid @white;
+        background-color: @white;
+        border          : 2px solid @maygreen;
         width           : 50%;
         border-radius   : 15px;
     }
@@ -58,20 +58,34 @@ header {
     display        : flex;
     justify-content: space-between;
 
+    @media @mobile {
+        .column;
+        margin-bottom: 5%;
+    }
+
     div {
-        width:20%;
-        text-align: center;
-        margin    : 2% auto;
-        border:2px solid @white;
-        padding:5%;
-        border-radius:15px;
-        background-color:@lightgreen;
-        color:@jetblack;
-        h2 {
-            font-size:1rem;
+        @media @mobile {
+            width        : 75%;
+            margin-bottom: 2%;
         }
-        p{
-            font-size:.75rem;
+
+        width           :20%;
+        text-align      : center;
+        margin          : 2% auto;
+        border          :2px solid @maygreen;
+        padding         :5%;
+        border-radius   :15px;
+        background-color:@white;
+        color           :@jetblack;
+
+        h2 {
+            color    : @maygreen;
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: .8rem;
         }
     }
 }
+
