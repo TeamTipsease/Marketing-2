@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: Verdana, 'Geneva', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin: 0 auto;
+  background-color: lightgray;
+  max-width: 1000px;
+}
+@media ( max-width: 500px ) {
+  .container {
+    max-width: 500px;
+  }
+}
+img {
+  display: block;
+  width: 100vh;
+  margin: 0 auto;
+  margin-top: 1%;
+  border-radius: 15px;
+}
+@media ( max-width: 500px ) {
+  img {
+    width: 100%;
+  }
+}
+footer {
+  background-color: lightgray;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+footer p {
+  font-size: 0.5rem;
+  text-align: center;
+  padding-bottom: 30px;
+}
+footer .github {
+  max-width: 25px;
+  padding: 2%;
+  display: inline-block;
+}
+header {
+  text-align: center;
+}
+header nav {
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+header nav .logo {
+  max-width: 125px;
+  border-radius: 15px;
+}
+header nav a {
+  padding: 2%;
+  border: 2px solid #F3EFF5;
+  border-radius: 15px;
+  background-color: #4FA93E;
+  color: #F3EFF5;
+}
+header nav a:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+header div .btn {
+  width: 45px;
+  background-color: #4FA93E;
+  border: 2px solid #F3EFF5;
+  color: #F3EFF5;
+  text-align: center;
+  padding: 1.5%;
+  border-radius: 15px;
+}
+header div .btn:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+header h1 {
+  font-size: 1rem;
+  padding: 1.5%;
+  color: #4FA93E;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+  width: 50%;
+  border-radius: 15px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+}
+.info div {
+  width: 20%;
+  text-align: center;
+  margin: 2% auto;
+  border: 2px solid #4FA93E;
+  padding: 5%;
+  border-radius: 15px;
+  background-color: #F3EFF5;
+  color: #343434;
+}
+@media ( max-width: 500px ) {
+  .info div {
+    width: 75%;
+    margin-bottom: 2%;
+  }
+}
+.info div h2 {
+  color: #4FA93E;
+  font-size: 1rem;
+}
+.info div p {
+  font-size: 0.8rem;
+}
+.team .teamtitle {
+  margin: 0 auto;
+  margin-top: 3%;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #4FA93E;
+  border-radius: 15px;
+  background-color: #F3EFF5;
+  color: #4FA93E;
+  width: 250px;
+  padding: 1.5% 0%;
+}
+.team .firstfour {
+  display: flex;
+  padding: 5%;
+}
+@media ( max-width: 500px ) {
+  .team .firstfour {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.team .firstfour div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+@media ( max-width: 500px ) {
+  .team .firstfour div {
+    margin-bottom: 10%;
+  }
+}
+.team .firstfour .individual h2 {
+  padding: 3%;
+  font-size: 0.9rem;
+}
+.team .firstfour .individual p {
+  padding: 3%;
+  margin-bottom: 5%;
+}
+.team .firstfour .individual a {
+  padding: 2%;
+  border: 2px solid #F3EFF5;
+  border-radius: 15px;
+  background-color: #4FA93E;
+  color: #F3EFF5;
+}
+.team .firstfour .individual a:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+.team .lastfour {
+  display: flex;
+  padding: 5%;
+}
+@media ( max-width: 500px ) {
+  .team .lastfour {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+  }
+}
+.team .lastfour div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+@media ( max-width: 500px ) {
+  .team .lastfour div {
+    margin-bottom: 10%;
+  }
+}
+.team .lastfour .individual h2 {
+  padding: 3%;
+  font-size: 0.9rem;
+}
+.team .lastfour .individual p {
+  padding: 3%;
+  margin-bottom: 5%;
+}
+.team .lastfour .individual a {
+  padding: 2%;
+  border: 2px solid #F3EFF5;
+  border-radius: 15px;
+  background-color: #4FA93E;
+  color: #F3EFF5;
+}
+.team .lastfour .individual a:hover {
+  color: #4FA93E;
+  background-color: #F3EFF5;
+  border: 2px solid #4FA93E;
+}
+.teampic {
+  width: 200px;
+}
